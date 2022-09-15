@@ -4,7 +4,7 @@ fetch("https://jsonplaceholder.typicode.com/todos")
     .then(json => {
         const completed = json // Complete this code <=Completed :)
         completed.forEach( (todo, index) => {
-            todoTitles[index]=`${todo.title} - ${todo.completed}`
+            todoTitles[index]=`${todo.title}`
         })
     })
     .catch(function(err) { 
