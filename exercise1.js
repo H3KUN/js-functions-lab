@@ -3,7 +3,7 @@ fetch("https://jsonplaceholder.typicode.com/todos")
     .then(json => {
         const completed = json // Complete this code <=Completed :)
         completed.forEach( (todo, index) => {
-            console.log(`${todo.title} - ${todo.completed}`)
+            if(todo.completed===true)console.log(`${todo.title} - ${todo.completed}`)
         })
     })
     .catch(function(err) { 
